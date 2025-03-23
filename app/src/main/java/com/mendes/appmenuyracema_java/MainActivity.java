@@ -34,13 +34,54 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewFood.setHasFixedSize(true);
         foodAdapter = new FoodAdapter(foodList, this);
         recyclerViewFood.setAdapter(foodAdapter);
+        getFood();
 
         }
     private void getFood(){
-        Food food1 = new Food (
-                R.drawable.food1
+        Food food1 = new Food(
+                R.drawable.food1,
+                "Especial sem prensar",
+                "Um pao fofinho com, tomate cebola e milho, 1 ou 2 vinas" +
+                        "e muita maionese junto com a nossa farofa de batata com bacon triturado.",
+                "21,90" );
 
-        )
+        foodList.add(food1);
+
+        Food food2 = new Food(
+                R.drawable.food2,
+                "Especial sem prensar",
+                "Um pao fofinho com, tomate cebola e milho, 1 ou 2 vinas" +
+                        "e muita maionese junto com a nossa farofa de batata com bacon triturado.",
+                "21,90" );
+
+        foodList.add(food2);
+
+        Food food3 = new Food(
+                R.drawable.food3,
+                "Especial sem prensar",
+                "Um pao fofinho com, tomate cebola e milho, 1 ou 2 vinas" +
+                        "e muita maionese junto com a nossa farofa de batata com bacon triturado.",
+                "21,90" );
+
+        foodList.add(food3);
+
+        Food food4 = new Food(
+                R.drawable.food4,
+                "Especial sem prensar",
+                "Um pao fofinho com, tomate cebola e milho, 1 ou 2 vinas" +
+                        "e muita maionese junto com a nossa farofa de batata com bacon triturado.",
+                "21,90" );
+
+        foodList.add(food4);
+
+        Food food5 = new Food(
+                R.drawable.food5,
+                "Especial sem prensar",
+                "Um pao fofinho com, tomate cebola e milho, 1 ou 2 vinas" +
+                        "e muita maionese junto com a nossa farofa de batata com bacon triturado.",
+                "21,90" );
+
+        foodList.add(food5);
     }
 
 }
